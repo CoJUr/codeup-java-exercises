@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class ControlFlowExercises {
 
     public static void main(String[] args) {
@@ -56,7 +58,7 @@ public class ControlFlowExercises {
 //        }
 
         //create a FOR that starts at 2 and displays the number squared on each line until 1,000,000
-        double i;
+//        double i;
 //        for (i = 2; i < 1000000; i*=i) {
 //            System.out.println(i);
 //        }
@@ -65,20 +67,46 @@ public class ControlFlowExercises {
         //write a program to print 1-100. if multiple of 3, print fizz instead of the num. multiple of
         //5, print buzz. if multiple of both, print FizzBuzz
 
-        for (i = 0; i <= 100; i++) {
-            if (i % 5 == 0 && i % 3 == 0) {
-                System.out.println("fizzbuzz");
-            }else if (i % 3 == 0) {
-                System.out.println("fizz");
-            } else if (i % 5 == 0) {
-                System.out.println("buzz");
-            } else {
-                System.out.println(i);
-            }
+//        for (i = 0; i <= 100; i++) {
+//            if (i % 5 == 0 && i % 3 == 0) {
+//                System.out.println("fizzbuzz");
+//            }else if (i % 3 == 0) {
+//                System.out.println("fizz");
+//            } else if (i % 5 == 0) {
+//                System.out.println("buzz");
+//            } else {
+//                System.out.println(i);
+//            }
+//
+//        }
+
+        //3 table of powers
+        //prompt user to enter an int
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Please enter a number to go up to");
+        int userInput = sc.nextInt();
+
+        //display a table of squares and cubes from 1 to the value entered
+        int i;
+        for (i = 0; i <= userInput; i++) {
+            System.out.println("counter = " + i);
+            System.out.println("squared: " + Math.pow(i, 2));
+            System.out.println("cubed: " + Math.pow(i, 3));
+
 
         }
 
-        //3 table of powers
+        //convert given number graddes into letter grades
+        //prompt user for number from 0 - 100. display the corresponding letter
+        System.out.println("Please enter a number from 0 to 100 for your grade");
+        int userNum = sc.nextInt();
+
+        switch (userNum) {
+            case 100 -> System.out.println("One vanilla coming up");
+            case 40 -> System.out.println("one chocolate coming up");
+            case 50 -> System.out.println("one strawberry...");
+            default -> System.out.println("we don't have that");
+        }
 
 
     }

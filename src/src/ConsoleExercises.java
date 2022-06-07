@@ -35,7 +35,6 @@ public class ConsoleExercises {
         for (int i = 0; i < 3; i++) {
             String userInput = scanner.next();
             System.out.printf("%s%n", userInput);
-
         }
 
         String sentence;
