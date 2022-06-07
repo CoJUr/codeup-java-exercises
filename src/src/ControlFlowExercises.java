@@ -57,16 +57,28 @@ public class ControlFlowExercises {
 
         //create a FOR that starts at 2 and displays the number squared on each line until 1,000,000
         double i;
-        for (i = 2; i < 1000000; i*=i) {
-            System.out.println(i);
-        }
-//        do {
-//            System.out.println("before increment i = " + i);
-//            i = Math.pow(i, 2);
-////            System.out.println(Math.pow(i, 2));
-//
+//        for (i = 2; i < 1000000; i*=i) {
+//            System.out.println(i);
 //        }
-//        while ( i < 1000000);
+
+        //2 fizzbuzz
+        //write a program to print 1-100. if multiple of 3, print fizz instead of the num. multiple of
+        //5, print buzz. if multiple of both, print FizzBuzz
+
+        for (i = 0; i <= 100; i++) {
+            if (i % 5 == 0 && i % 3 == 0) {
+                System.out.println("fizzbuzz");
+            }else if (i % 3 == 0) {
+                System.out.println("fizz");
+            } else if (i % 5 == 0) {
+                System.out.println("buzz");
+            } else {
+                System.out.println(i);
+            }
+
+        }
+
+        //3 table of powers
 
 
     }
