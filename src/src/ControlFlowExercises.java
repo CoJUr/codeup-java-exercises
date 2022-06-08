@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class ControlFlowExercises {
 
     public static void main(String[] args) {
@@ -170,20 +172,35 @@ public class ControlFlowExercises {
 
         //4) convert given number grades from the user into displayed letter grades
         //walkthru ---
-//        Scanner sc = new Scanner(System.in);
-//
-//        boolean anotherGrade = true;  //if user doesnt select y, changes to false
-//
-//        System.out.println("please enter a numerical grade");
-//
-//        int numericGrade = sc.nextInt();
-//
-//        if (numericGrade >= 88) {
-//            System.out.println("A");
-//        } else if (numericGrade >= 80) {
-//            System.out.println("B");
-//        } else if (numericGrade >= )
+        Scanner sc = new Scanner(System.in);
 
+        boolean anotherGrade = true;  //if user doesnt enter y, changes to false
+
+        do {
+            System.out.println("please enter a numerical grade");
+
+
+            int numericGrade = sc.nextInt();
+
+            if (numericGrade >= 88) {
+                System.out.println("A");
+            } else if (numericGrade >= 80) {
+                System.out.println("B");
+            } else if (numericGrade >= 67) {
+                System.out.println("C");
+            } else if (numericGrade >= 60) {
+                System.out.println("D");
+            } else {
+                System.out.println("F");
+            }
+
+            System.out.println("Go again?  y/n ");
+            String userChoice = sc.next();
+
+            if (!userChoice.equalsIgnoreCase("y")) {
+                anotherGrade = false;
+            }
+        } while (anotherGrade);
 
 
 
