@@ -19,17 +19,22 @@ public class HighLow {
         Scanner scanner = new Scanner(System.in);
         int userInput = scanner.nextInt();
 
-        System.out.printf("You chose the # %d", userInput);
+        System.out.printf("You chose the # %d\n", userInput);
 
         do {
             if (theNum > userInput) {
                 System.out.println("HIGHER");
+                System.out.println("Please pick again");
+                userInput = scanner.nextInt();
 
             } else if (theNum < userInput) {
                 System.out.println("LOWER");
+                System.out.println("Please pick again");
+                userInput = scanner.nextInt();
 
             } else {
                 System.out.println("GOOD GUESS!");
+                System.out.println(userInput + " was right!");
                 goodGuess = true;
                 break;
             }
