@@ -28,19 +28,19 @@ public class Bob {
 //        }
 
         //walkthru----
-        System.out.println("Talk to bob");
-        String userInput = sc.nextLine();
 //        System.out.println("Talk to bob");
-
-        if (userInput.endsWith("?")) {
-            System.out.println("sure");
-        } else if (userInput.endsWith("!")){
-            System.out.println("Whoa, chill out!");
-        } else if (userInput.equals("")) {
-            System.out.println("Fine, be that way.");
-        } else {
-            System.out.println("Whatever.");
-        }
+//        String userInput = sc.nextLine();
+////        System.out.println("Talk to bob");
+//
+//        if (userInput.endsWith("?")) {
+//            System.out.println("sure");
+//        } else if (userInput.endsWith("!")){
+//            System.out.println("Whoa, chill out!");
+//        } else if (userInput.equals("")) {
+//            System.out.println("Fine, be that way.");
+//        } else {
+//            System.out.println("Whatever.");
+//        }
 
 
 
