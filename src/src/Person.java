@@ -1,3 +1,5 @@
+import util.Input;
+
 public class Person {
     // variables
     private String name;
@@ -26,10 +28,20 @@ public class Person {
 //---methods
 
     public static void main(String[] args) {
-    Person person = new Person("Jacob");
+//    Person person = new Person("Jacob");
+//
+//    person.sayHello();
+//    person.setName("Jakob");
+//    System.out.println(person.getName());
+//
+//    Person person2 = new Person("Tina");
 
-    person.sayHello();
-    System.out.println(person.getName());
+        Input input1 = new Input();
+//        System.out.println(input1.yesNo());
+//        System.out.println(input1.getInt(0, 10));
+//        System.out.println(input1.getDouble());
+        System.out.println(input1.getDouble(0.0, 10.0));
+
 
 //        Person person1 = new Person("John");
 //        Person person2 = person1;

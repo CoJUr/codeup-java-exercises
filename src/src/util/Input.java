@@ -11,39 +11,75 @@ public class Input {
 
 
     //methods---
-    public Input () {
+    public Input() {
         this.scanner = new Scanner(System.in);
     }
 
     public String getString() {
-        String userInput = scanner.nextLine()
+        System.out.println("Please enter a string:");
+        String userInput = scanner.nextLine();
         return userInput;
     }
 
     public boolean yesNo() {
-        return scanner.nextLine().equalsIgnoreCase("yes") || scanner.nextLine().equalsIgnoreCase("y");
+        System.out.println("Would?  y/n");
+        String userInput = scanner.nextLine();
+        return userInput.equalsIgnoreCase("y") || userInput.equalsIgnoreCase("yes");
     }
 
     public int getInt(int min, int max) {
-//        if (scanner.nextInt())
 
-        System.out.println("Enter an integer :");
-        int userInput = scanner.nextInt();
+        int userInput;
+
+        do {
+            System.out.println("Enter an integer between " + min + " and " + max);
+            userInput = scanner.nextInt();
+            if (userInput < min) {
+                System.out.println("too low try again");
+
+            } else if (userInput > max) {
+                System.out.println("too high! Again");
+            }
+
+        } while (userInput < min || userInput > max);
+
+
         return userInput;
     }
 
-    public int getInt() {
-        return scanner.nextInt();
-    }
+//    public int getInt() {
+//            System.out.println("What is your favorite number? :");
+//            int userFavorite = scanner.nextInt();
+//
+//            return userFavorite;
+//    }
 
     public double getDouble(double min, double max) {
-        return scanner.nextInt();
-    }
+        System.out.println("Enter a decimal number between " + min + " and " + max);
+        double userDbl = scanner.nextDouble();
 
+        while (userDbl < min || userDbl > max) {
+            System.out.println("Seriously please enter a double like I asked for :");
+            userDbl = scanner.nextDouble();
+            if (userDbl < min) {
+                System.out.println("too low try again");
+
+
+            } else if (userDbl > max) {
+                System.out.println("too high! Again");
+
+
+            } else {
+                break;
+            }
+            System.out.println("I think you said " + userDbl );
+        } return userDbl;
+
+    }
     public double getDouble() {
-        return scanner.nextInt();
+        System.out.println("what your favorite decimal number?");
+        return scanner.nextDouble();
     }
-
 
 
 }
