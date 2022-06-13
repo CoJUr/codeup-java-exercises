@@ -34,6 +34,10 @@ public class ConstructorsAndCh {
 
     BankAccount jenny = new BankAccount("555-444-3333", 560.00, "jenny", "jenny@gmail.com", "456789");
 
+        System.out.println("***");
+        BankAccount tim = new BankAccount("tim@gmail", "12345");  // 2 constructor call - only takes email + accnt#
+        System.out.println("tims #: " + tim.getPhone() + " | tim's name: " + tim.getCustomer() + " | tim's email: " + tim.getEmail());
+        System.out.println("***");
 
         System.out.println(String.format("jenny's phone #: %s%n her name: %s%n her email: %s%n   her balance: %.3f", jenny.getPhone(),
                 jenny.getCustomer(), jenny.getEmail(), jenny.getBalance()));

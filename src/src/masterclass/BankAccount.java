@@ -69,12 +69,27 @@ public class BankAccount {
     }
 
     public BankAccount(String phone, double balance, String customer, String email, String accountNum) {
+        setPhone(phone);
+        setBalance(balance);
+        setCustomer(customer);
+        setEmail(email);
+        setAccountNum(accountNum);         //setField(field) instead of this.field = field -- not always advisable
+
+        System.out.println("Full param constructor call");
+    }
+
+    public BankAccount(String email, String accountNum) {
+        this("9998887777",5.00, "Default", email, accountNum);  //what isn't passed as param, give default vals in this()
+                System.out.println("2-field constructor SUMMONED");
+
+    }
+
+    public BankAccount(String phone, double balance, String customer, String accountNum) {
+        System.out.println("Constructor without email field called");
         this.phone = phone;
         this.balance = balance;
         this.customer = customer;
-        this.email = email;
         this.accountNum = accountNum;
-        System.out.println("Full param constructor call");
     }
 
 
