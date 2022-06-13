@@ -7,18 +7,17 @@ public class Input {
     //variables---
     private Scanner scanner;
 
-
     //----
 
 
     //methods---
-
     public Input () {
         this.scanner = new Scanner(System.in);
     }
 
     public String getString() {
-        return scanner.nextLine();
+        String userInput = scanner.nextLine()
+        return userInput;
     }
 
     public boolean yesNo() {
@@ -28,7 +27,9 @@ public class Input {
     public int getInt(int min, int max) {
 //        if (scanner.nextInt())
 
-        return scanner.nextInt();
+        System.out.println("Enter an integer :");
+        int userInput = scanner.nextInt();
+        return userInput;
     }
 
     public int getInt() {
@@ -42,6 +43,7 @@ public class Input {
     public double getDouble() {
         return scanner.nextInt();
     }
+
 
 
 }
