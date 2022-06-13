@@ -1,5 +1,3 @@
-import util.Input;
-
 public class Person {
     // variables
     private String name;
@@ -36,11 +34,11 @@ public class Person {
 //
 //    Person person2 = new Person("Tina");
 
-        Input input1 = new Input();
+//        Input input1 = new Input();
 //        System.out.println(input1.yesNo());
 //        System.out.println(input1.getInt(0, 10));
 //        System.out.println(input1.getDouble());
-        System.out.println(input1.getDouble(0.0, 10.0));
+//        System.out.println(input1.getDouble(0.0, 10.0));
 
 
 //        Person person1 = new Person("John");
