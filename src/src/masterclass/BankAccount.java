@@ -62,10 +62,22 @@ public class BankAccount {
 
 
     }
+        //constructors
+    public BankAccount() {
+        this("Default-555-5555", 5.00, "Default name", "Default@gmail.com", "12345");
+        System.out.println("empty constructor call");
+    }
 
-//    public BankAccount(String customer, String email, String phone) {
-//
-//    }
+    public BankAccount(String phone, double balance, String customer, String email, String accountNum) {
+        this.phone = phone;
+        this.balance = balance;
+        this.customer = customer;
+        this.email = email;
+        this.accountNum = accountNum;
+        System.out.println("Full param constructor call");
+    }
+
+
 
 
 }
