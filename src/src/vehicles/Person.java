@@ -10,4 +10,8 @@ class Person {
     public void sayHello() {
         System.out.println("Hello from " + name + "!");
     }
+
+    public static void main(String[] args) {
+
+    }
 }

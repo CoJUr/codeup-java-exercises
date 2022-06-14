@@ -16,6 +16,8 @@ public class VehicleTest {
 
         train.makeNoise();
 
+        moped.breakingDownNoise();
+
 
     }
 }
