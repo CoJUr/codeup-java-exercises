@@ -24,7 +24,7 @@ public class ArraysLec {
         //for loop
         for (int i = 0; i < synonymsOfWeird.length; i++) {
             System.out.println("The word at index " + i + " is " + synonymsOfWeird[i]);
-        Monster[] monsters = {orc, blueDragon, ogre}; //have to create Monster.java first and constructor and then instantiate all 3
+//        Monster[] monsters = {orc, blueDragon, ogre}; //have to create Monster.java first and constructor and then instantiate all 3
 
         }
 
