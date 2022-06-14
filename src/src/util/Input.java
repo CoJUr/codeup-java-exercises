@@ -82,4 +82,14 @@ public class Input {
     }
 
 
+    public double getDouble(String prompt) {
+        System.out.println("what is your favorite decimal number?");
+
+        System.out.println("by the way look at this : " + prompt);
+
+        return scanner.nextDouble();
+    }
+
+
+
 }
