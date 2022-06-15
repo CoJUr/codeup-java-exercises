@@ -1,6 +1,6 @@
 package vehicles;
 
-public class Vehicle {
+public class Vehicle{
 
     /*Mini-exercise
 Create a Vehicle class with two properties: a name instance variable and a makeNoise() method.
@@ -38,5 +38,11 @@ Notice the inherited method works and the inherited name property is assignable 
     public void makeNoise() {
         System.out.println( "skurt skurt" );
     }
+
+    public Vehicle(String name) {
+        this.name = name;
+    }
+
+    public Vehicle() {}
 }
 

@@ -10,6 +10,7 @@ public class Garage {
     //
     //Now, replace one of the cars with another type of vehicle. Run the retrieveVehicles method again.
     private Vehicle[] vehicles;
+    private String name;
 
     public Vehicle[] getVehicles() {
         return vehicles;
@@ -19,9 +20,37 @@ public class Garage {
         this.vehicles = vehicles;
     }
 
+//    public void retrieveVehicles() {
+//        for (int i = 0; i < vehicles.length; i++) {
+//            vehicles[i].makeNoise();
+//        }
+//    }
+    public Garage() {}
+
+    public String getName() {
+        return name;
+    }
+
+    public Vehicle findVehicle(String name, Vehicle[] vehicles){
+        for (Vehicle vehicle: vehicles){
+            if(vehicle.getName().equalsIgnoreCase(name)){
+                return vehicle;
+            }
+        }
+        return new Vehicle (null);
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Garage(String name) {
+        this.name = name;
+    }
+
     public void retrieveVehicles() {
-        for (int i = 0; i < vehicles.length; i++) {
-            vehicles[i].makeNoise();
+        for( Vehicle vehicle: vehicles){
+            vehicle.makeNoise();
         }
     }
 }
