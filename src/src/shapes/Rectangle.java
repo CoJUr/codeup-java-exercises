@@ -10,9 +10,7 @@ public class Rectangle {
         this.width = width;
     }
 
-    public Rectangle() {
-
-    }
+    public Rectangle() {}
 
     public double getArea(int i) {
         System.out.print("Rectangle.getAREA ran: ");
