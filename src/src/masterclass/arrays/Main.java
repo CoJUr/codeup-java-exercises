@@ -12,6 +12,8 @@ public class Main {
         for (int i = 0; i < myIntegers.length; i++) {
             System.out.println("element " + i + " , typed value was" + myIntegers[i]);
         }
+        System.out.println("The average = " + getAverage(myIntegers));
+
         //creating a method that accepts 5 nums and returns nums in myIntegers[]
 
     }
@@ -24,5 +26,13 @@ public class Main {
             values[i] = scanner.nextInt();
         }
         return values;
+    }
+
+    public static double getAverage(int[] array){
+        int sum = 0;
+        for (int i = 0; i < array.length; i++) {
+            sum += array[i];
+        }
+        return (double) sum / (double) array.length;
     }
 }

@@ -20,14 +20,14 @@ public class Square extends Quadrilateral{
 
     @Override
     public void setLength() {
-
-
+//        this.width = length; dont need b/c of super call in constructor
+//        this.length = length; "" ""   ""     ""      ""     ""
     }
 
     @Override
     public void setWidth() {
-
-
+//        this.width = width;
+//        this.length = width;
     }
 
 
