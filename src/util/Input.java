@@ -80,8 +80,13 @@ public class Input {
         } return userDbl;
 
     }
-    public double getDouble() {
-        System.out.println("what your favorite decimal number?");
+//    public double getDouble() {
+//        System.out.println("what your favorite decimal number?");
+//        return scanner.nextDouble();
+//    }
+
+    public double getDouble(){
+        System.out.println("Please enter the radius");
         return scanner.nextDouble();
     }
 
