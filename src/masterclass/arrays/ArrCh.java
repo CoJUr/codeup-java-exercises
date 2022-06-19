@@ -38,10 +38,13 @@ public class ArrCh {
     }
 
     public static int[] sortIntegers(int[] arr) {
-        int[] newArray = new int[arr.length];
-        for (int i = 0; i < arr.length; i++) {
-            newArray[i] = arr[i];
-        }
+//        int[] newArray = new int[arr.length];
+//        for (int i = 0; i < arr.length; i++) {
+//            newArray[i] = arr[i];
+//        }
+            //or instead do this:
+        int[] newArray = Arrays.copyOf(arr, arr.length);
+
         boolean flag = true;
         int temp;
         while(flag) {
