@@ -18,9 +18,14 @@ public class MoviesApplication {
 
 
         System.out.println("What would you like to do?");
-        System.out.println("\n0 - exit \n1 - view all movies \n2 - view movies in the animated category" +
-                "\n3 - view movies in the drama category \n4 - view movies in the horror category" +
-                "\n5 view movies in the scifi category");
+        System.out.println("""
+
+                0 - exit\s
+                1 - view all movies\s
+                2 - view movies in the animated category
+                3 - view movies in the drama category\s
+                4 - view movies in the horror category
+                5 view movies in the scifi category""");
         String userInput = input1.getScanner();
 //        String nextAction = Input.getScanner.nextLine();
 

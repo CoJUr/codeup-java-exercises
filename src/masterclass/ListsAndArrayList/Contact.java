@@ -1,4 +1,4 @@
-package Arrays;
+package masterclass.ListsAndArrayList;
 
 public class Contact {
     private String name;

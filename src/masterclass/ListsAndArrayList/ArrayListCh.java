@@ -1,4 +1,4 @@
-package Arrays;
+package masterclass.ListsAndArrayList;
 
 // Create a program that implements a simple mobile phone with the following capabilities.
 // Able to store, modify, remove and query contact names.
