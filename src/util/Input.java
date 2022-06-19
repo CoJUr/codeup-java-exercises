@@ -10,6 +10,10 @@ public class Input {
     //----
 
 
+    public String getScanner() {
+        return scanner.nextLine();
+    }
+
     //methods---
     public Input() {
         this.scanner = new Scanner(System.in);

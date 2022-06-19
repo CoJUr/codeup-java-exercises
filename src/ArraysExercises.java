@@ -1,14 +1,34 @@
+import java.util.Arrays;
 public class ArraysExercises {
 
-    public static Person[] addPerson(Person[] people, Person p) {
+    public static Person[] addPerson(Person p, Person[] people) {
 
-        Person[] copyFrom = Arrays.Arrays.copyOf(people, people.length +1);
-        copyFrom[copyFrom.length - 1] = p;
-        return copyFrom;
+        Person[] newCopy = Arrays.copyOf(people, people.length +1);
+        newCopy[newCopy.length - 1] = p;
+        return newCopy;
 
     }
 
-    //walkthru-----
+    public static void main(String[] args) {
+
+        int[] numbers = {1, 2, 3, 4, 5};
+        System.out.println(Arrays.toString(numbers));
+
+        Person person1 = new Person("Bob");
+        Person person2 = new Person("Harry");
+        Person person3 = new Person("Harriet");
+
+        Person[] people = {person1, person2, person3};
+
+        for (Person p : people) {
+            System.out.println(p.getName());
+        }
+
+
+// psvm ^
+
+
+        //walkthru-----
 //    public static Person[] addPerson(Person newPerson, Person[] persons) {
 //        Person[] newPersonArray;
 ////        newPersonArray = new Person[persons.length + 1];
@@ -22,23 +42,6 @@ public class ArraysExercises {
 //        return newPersonArray;
 //    }
 //------
-
-    public static void main(String[] args) {
-
-        int[] numbers = {1, 2, 3, 4, 5};
-        System.out.println(Arrays.Arrays.toString(numbers));
-
-        Person person1 = new Person("Bob");
-        Person person2 = new Person("Harry");
-        Person person3 = new Person("Harriet");
-
-        Person[] people = {person1, person2, person3};
-
-        for (Person p : people) {
-            System.out.println(p.getName());
-        }
-
-
 
         //walkthru--------
 //        Person[] persons;

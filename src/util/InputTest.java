@@ -1,4 +1,4 @@
-import util.Input;
+package util;
 
 public class InputTest {
 
