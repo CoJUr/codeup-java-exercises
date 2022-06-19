@@ -14,7 +14,10 @@ public class ArrCh {
     public static void main(String[] args) {
         int[] challenge = getIntegers(5);
 
-        printArray(challenge);
+        int[] sorted = sortIntegers(challenge);
+        printArray(sorted);
+
+
 
 
 
