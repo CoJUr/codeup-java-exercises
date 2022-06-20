@@ -91,6 +91,7 @@ public class Input {
     }
 
 
+
     public double getDouble(String prompt) {
         System.out.println("what is your favorite decimal number?");
 
