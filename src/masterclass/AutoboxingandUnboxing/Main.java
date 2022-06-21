@@ -40,8 +40,8 @@ public class Main {
         //first El in the ArrayList is now an obj of type IntClass with the value 54
 
 
-        Integer integer = new Integer(54);
-        Double doubleValue = new Double(12.25);
+//        Integer integer = new Integer(54);
+//        Double doubleValue = new Double(12.25);
 
         ArrayList<Integer> intArrayList = new ArrayList<Integer>();
         for (int i = 0; i < 10; i++) {
