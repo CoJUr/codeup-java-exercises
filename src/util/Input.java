@@ -20,9 +20,8 @@ public class Input {
     }
 
     public String getString() {
-        System.out.println("Please enter a string:");
-        String userInput = scanner.nextLine();
-        return userInput;
+
+        return scanner.nextLine();
     }
 
     public boolean yesNo() {
@@ -33,10 +32,12 @@ public class Input {
 
     public int getInt(int min, int max) {
 
+
         int userInput;
 
         do {
             System.out.println("Enter an integer between " + min + " and " + max);
+
             userInput = Integer.valueOf(getString());
             if (userInput < min) {
                 System.out.println("too low try again");
@@ -51,12 +52,19 @@ public class Input {
         return userInput;
     }
 
-//    public int getInt() {
-//            System.out.println("What is your favorite number? :");
-//            int userFavorite = scanner.nextInt();
-//
-//            return userFavorite;
-//    }
+    public int getInt() {
+        try {
+            System.out.println("What is your favorite number? :");
+            int userFavorite = Integer.valueOf(getString());
+
+            return userFavorite;
+        } catch( NumberFormatException e) {
+            System.out.println("Incorrect input type");
+            e.getMessage();
+        }
+
+        return 0;
+    }
 
     public double getDouble(double min, double max) {
         System.out.println("Enter a decimal number between " + min + " and " + max);
@@ -86,8 +94,17 @@ public class Input {
 //    }
 
     public double getDouble(){
-        System.out.println("Please enter the radius");
-        return scanner.nextDouble();
+        try {
+            System.out.println("Please enter the radius");
+            return Double.parseDouble(getString());
+        } catch (NumberFormatException e) {
+            System.out.println("Incorrect type entered");
+            System.out.println(e.getMessage());
+            e.printStackTrace();
+
+        }
+
+        return 0;
     }
 
 

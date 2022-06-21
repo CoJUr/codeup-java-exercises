@@ -7,7 +7,6 @@ import java.util.ListIterator;
 public class Demo {
 
 
-
     public static void main(String[] args) {
         LinkedList<String> placesToVisit = new LinkedList<String>();
         placesToVisit.add("Sydney");
@@ -28,10 +27,10 @@ public class Demo {
         printList(placesToVisit); //Brisbane now points to Canberra instead of Perth - Perth gone
     }
 
-    private static void printList(LinkedList<String> linkedList){
+    private static void printList(LinkedList<String> linkedList) {
         Iterator<String> i = linkedList.iterator();
 
-        while (i.hasNext()){
+        while (i.hasNext()) {
             //^while the list El is pointing to something else (isnt last), show current record
             System.out.println("Now visiting " + i.next());
             //i.next() changes value of iterator like i++. print the current value but also moves to the next
@@ -44,7 +43,7 @@ public class Demo {
         //using a list iterator. increased flexibility
         ListIterator<String> stringListIterator = linkedList.listIterator();
 
-        while(stringListIterator.hasNext()) {
+        while (stringListIterator.hasNext()) {
             //navigate thru all entries in the list iterator and use compareTo
 
             int comparison = stringListIterator.next().compareTo(newCity);
@@ -69,5 +68,6 @@ public class Demo {
         //if here, gone through the entire list without finding a point to insert the entry, so put it at the end
         stringListIterator.add(newCity);
 
+        return false; //placeholder
     }
 }
