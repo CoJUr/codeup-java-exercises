@@ -1,6 +1,6 @@
 package util;
-
 import java.util.Scanner;
+
 
 public class Input {
 
@@ -37,7 +37,7 @@ public class Input {
 
         do {
             System.out.println("Enter an integer between " + min + " and " + max);
-            userInput = scanner.nextInt();
+            userInput = Integer.valueOf(getString());
             if (userInput < min) {
                 System.out.println("too low try again");
 
