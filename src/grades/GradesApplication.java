@@ -5,51 +5,34 @@ import java.util.*;
 public class GradesApplication {
 
 
-
-
-
-
     public static void main(String[] args) {
         HashMap<String, Student> students = new HashMap<>();
 
         Student enrique = new Student("Enrique");
-//        enrique.addGrade(8);
-//        enrique.addGrade(9);
-//        enrique.addGrade(9);
-        //    key = username    value = object/instance
         students.put("risque", enrique);
-        enrique.addGrades(new ArrayList<>(List.of(8,9,9)));
+        enrique.addGrades(new ArrayList<>(List.of(8, 9, 9)));
 
 
         Student celeste = new Student("Celeste");
-//        celeste.addGrade(10);
-//        celeste.addGrade(11);
-//        celeste.addGrade(12);
         students.put("celery23", celeste);
-        celeste.addGrades(new ArrayList<>(List.of(10,11,12)));
+        celeste.addGrades(new ArrayList<>(List.of(10, 11, 12)));
 
 
         Student zanzibar = new Student("Zanzibar");
-//        zanzibar.addGrade(11);
-//        zanzibar.addGrade(11);
-//        zanzibar.addGrade(9);
         students.put("czar4barz", zanzibar);
         zanzibar.addGrades(new ArrayList<>(List.of(9, 11, 11)));
 
 
         Student jezzebel = new Student("Jezzebel");
-//        jezzebel.addGrade(9);
-//        jezzebel.addGrade(13);
-//        jezzebel.addGrade(10);
+
         jezzebel.addGrades(new ArrayList<>(List.of(9, 13, 10)));
         System.out.println(jezzebel.getGradeAverage());
         students.put("belawesome", jezzebel);
 
 
-//        System.out.println(students);
         boolean flag = true;
 
-            System.out.println("Welcome!\n\nHere are the GitHub usernames of our students:\n");
+        System.out.println("Welcome!\n\nHere are the GitHub usernames of our students:\n");
         do {
             //call .keySet on the hashmap variable to get a set of the key values from students
             //datatype of the keys goes in the diamond

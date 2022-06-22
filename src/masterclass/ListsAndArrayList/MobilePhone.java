@@ -36,8 +36,11 @@ public class MobilePhone {
         if (foundPosition < 0) {
             System.out.println(oldContact.getName() + " was not found.");
             return false;
+        } else if (findContact(newContact.getName()) != -1) { //confirming name of contact doesnt already exist
+            System.out.println("Contact with name " + newContact.getName() + " already exists. Update not successful.");
+            return false;
         }
-        //if here, found a position >= 0, so update ArrayList at the given position
+        //if here, name wasn't found, so do perform update
         this.myContacts.set(foundPosition, newContact);
         System.out.println(oldContact.getName() + " was replaced with " + newContact.getName());
         return true;

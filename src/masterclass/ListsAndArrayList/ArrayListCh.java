@@ -160,7 +160,8 @@ public class ArrayListCh {
                 0 - to shutdown
                 1 - to print contacts
                 2 - to add new contact
-                3 - to update a contact4 - to remove a contact
+                3 - to update an existing contact
+                4 - to remove a contact
                 5 - search for an existing contact
                 6 - to print a list of available actions.""");
         //going to use a switch for each case
