@@ -41,11 +41,15 @@ public class Student {
     }
 
     public double getGradeAverage(){
-        int sum = 0;
-        for (Integer grade : grades) {
+        double sum = 0;
+        for (Integer grade : this.grades) {
             sum += grade;
         }
-        return (double) sum / grades.size();
+        return sum / grades.size();
+    }
+
+    public void addGrades(ArrayList<Integer> grades){
+        this.grades.addAll(grades);
     }
 
 }
