@@ -27,28 +27,28 @@ public class AutoAndUnBoxingCh {
     public static void main(String[] args) {
 
 
-        Bank bank = new Bank("National Bank");
+//        Bank bank = new Bank("National Bank");
+//
+//        //add a branch
+//        bank.addBranch("Adelaide");
+//
+//        //add custos
+//        bank.addCustomer("Adelaide", "Tim", 50.05);
+//        bank.addCustomer("Adelaide", "Mike", 75.34);
+//        bank.addCustomer("Adelaide", "Percy", 250.15);
+//
+//        //create another branch
+//        bank.addBranch("Sydney");
+//        bank.addCustomer("Sydney", "Bob", 150.54);
+//
+//
+//        //add transactions
+//        bank.addCustomerTransactions("Adelaide", "Tim", 44.22);
+//        bank.addCustomerTransactions("Adelaide", "Tim", 14.42);
+//        bank.addCustomerTransactions("Adelaide", "Mike", 1.59);
 
-        //add a branch
-        bank.addBranch("Adelaide");
-
-        //add custos
-        bank.addCustomer("Adelaide", "Tim", 50.05);
-        bank.addCustomer("Adelaide", "Mike", 75.34);
-        bank.addCustomer("Adelaide", "Percy", 250.15);
-
-        //create another branch
-        bank.addBranch("Sydney");
-        bank.addCustomer("Sydney", "Bob", 150.54);
-
-
-        //add transactions
-        bank.addCustomerTransactions("Adelaide", "Tim", 44.22);
-        bank.addCustomerTransactions("Adelaide", "Tim", 14.42);
-        bank.addCustomerTransactions("Adelaide", "Mike", 1.59);
-
-        //test the bank. false first to not show transactions
-        bank.listCustomers("Adelaide", false);
+//        //test the bank. false first to not show transactions
+//        bank.listCustomers("Adelaide", false);
 
 
     }

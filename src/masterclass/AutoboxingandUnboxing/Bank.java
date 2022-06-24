@@ -17,15 +17,15 @@ public class Bank {
     }
 
     //add branches similar to how added customers
-    public boolean addBranch (String branchName) {
-        if (findBranch(branchName == null)) {
-            this.branches.add(new Branch(branchName));
-            //calling the branch constructor, passing it the name
-            return true;
-        }
-        //if here, can't add it to the list bc already exists
-        return false;
-    }
+//    public boolean addBranch (String branchName) {
+//        if (findBranch(branchName == null)) {
+//            this.branches.add(new Branch(branchName));
+//            //calling the branch constructor, passing it the name
+//            return true;
+//        }
+//        //if here, can't add it to the list bc already exists
+//        return false;
+//    }
 
     //adding customers - when adding customers, need to specify a branch along with
     //customer name and initial transaction. check to see if the branch exists first.
