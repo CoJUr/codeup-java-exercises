@@ -26,7 +26,7 @@ public class Branch {
         //need a find customer method to test if name in use
         if (findCustomer(customerName) == null) {
             this.customers.add(new Customer(customerName, initialAmount));
-                    //if not found on file, constructing and adding the customer
+            //if not found on file, adding the customer to customers array with customer constructor
             return true;
         }
         //if here, findCustomer returned a customer, so don't add them
@@ -58,6 +58,7 @@ public class Branch {
         return null; // would mean no matches; not on file
     }
 
-
-
+    public ArrayList<Customer> getCustomers() {
+        return customers;
+    }
 }
