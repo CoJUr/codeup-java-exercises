@@ -21,7 +21,7 @@ public class LeftShiftPowersofTwo {
 
         //2
         while (y-- > 0) x *= 2;
-
+        return x;
 
     }
 
