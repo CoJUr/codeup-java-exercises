@@ -69,7 +69,7 @@ class Forgetable extends Movie {
         super("Forgettable");
     }
 
-    //no plot method/override for demonstration purpose
+    //no plot method/override for demonstration purpose. it will call the base class' plot()
 }
 public class Main {
 
