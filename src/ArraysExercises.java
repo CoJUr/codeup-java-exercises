@@ -1,28 +1,28 @@
-import java.util.Arrays;
-public class ArraysExercises {
-
-    public static Person[] addPerson(Person p, Person[] people) {
-
-        Person[] newCopy = Arrays.copyOf(people, people.length +1);
-        newCopy[newCopy.length - 1] = p;
-        return newCopy;
-
-    }
-
-    public static void main(String[] args) {
-
-        int[] numbers = {1, 2, 3, 4, 5};
-        System.out.println(Arrays.toString(numbers));
-
-        Person person1 = new Person("Bob");
-        Person person2 = new Person("Harry");
-        Person person3 = new Person("Harriet");
-
-        Person[] people = {person1, person2, person3};
-
-        for (Person p : people) {
-            System.out.println(p.getName());
-        }
+//import java.util.Arrays;
+//public class ArraysExercises {
+//
+//    public static person[] addPerson(person p, person[] people) {
+//
+//        person[] newCopy = Arrays.copyOf(people, people.length +1);
+//        newCopy[newCopy.length - 1] = p;
+//        return newCopy;
+//
+//    }
+//
+//    public static void main(String[] args) {
+//
+//        int[] numbers = {1, 2, 3, 4, 5};
+//        System.out.println(Arrays.toString(numbers));
+//
+//        person person1 = new person("Bob");
+//        person person2 = new person("Harry");
+//        person person3 = new person("Harriet");
+//
+//        person[] people = {person1, person2, person3};
+//
+//        for (person p : people) {
+//            System.out.println(p.getName());
+//        }
 
 
 // psvm ^
@@ -66,4 +66,4 @@ public class ArraysExercises {
         //-------
 //    }
 
-}}
+//}}
