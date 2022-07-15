@@ -44,12 +44,10 @@ public class MyClass {
         System.out.println("Enter age limit: ");
         int ageLimit = scanner.nextInt();
 
-        for (String emp : nameArr
-        ) {
+        for (String emp : nameArr) {
             if (ages.get(emp) < ageLimit){
                 ages.remove(emp);
                 System.out.println("Removed: " + emp);
-
             }
         }
 
