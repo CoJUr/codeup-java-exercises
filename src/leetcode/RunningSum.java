@@ -1,4 +1,4 @@
-package leetcode.Day1;
+package leetcode;
 
 import java.util.Arrays;
 //time complexity: O(n) where n = length of input array

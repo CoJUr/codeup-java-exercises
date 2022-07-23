@@ -1,4 +1,4 @@
-package leetcode.Day1;
+package leetcode;
 //return -1 if no leftmost pivot index exists
 public class LeftMostPivotIndex {
 
