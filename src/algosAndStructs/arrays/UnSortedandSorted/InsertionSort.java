@@ -2,7 +2,7 @@ package algosAndStructs.arrays.UnSortedandSorted;
 //growing sorted part from left to right this time - from the front of the array.
 //says 1st el in the array is in the sorted part. thus sorted partition length = 1 and unsorted is everything to the right of 0th index
 // 1st unsorted index = i=1.   i = used to track right-most index of sorted partition   looking for a val <= one we're trying to insert
-//O(n^2) - quadratic     stable     in-place
+//O(n^2) - quadratic     stable     in-place     potential for a LOT of shifting
 public class InsertionSort {
 
     public static void main(String[] args) {

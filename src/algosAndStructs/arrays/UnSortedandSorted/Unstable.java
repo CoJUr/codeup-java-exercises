@@ -12,6 +12,8 @@ class SelectionSort {
 //    init:  lastUnsortedIndex = 6   i = 1 (traverse left to right)   largest = 0 (index of largest unsorted element)
 //    if [i] > [largest], then largest = [i]     in-place algorithm     O(n^2) - quadratic
 //    after each traversal, selects largest value and adds to end of sorted array.
+public static void main(String[] args) {
+
 
     int[] intArray = { 20, 35, -15, 7, 55, 1, -22 };
 
@@ -30,7 +32,7 @@ class SelectionSort {
 //        outer loop increases the sorted partition index by 1 from right to left while the inner looks for largest element
     }
 
-
+}
 
     public static void swap(int[] array, int i, int j) {
         if (i == j) {
