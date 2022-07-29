@@ -9,6 +9,7 @@ public class EncapWhatVaries {
 //    implement 2 flysubclass from FlyBehavior interface -  FlyWithWings and FlyNoWay
 //    also add 2 properties to the Duck class - QuackBehavior quackBehavior and FlyBehavior flyBehavior - "has a" relationships
 
+//    WHAT FOLLOWS IS "THE STRATEGY PATTERN"
 
 }
 
