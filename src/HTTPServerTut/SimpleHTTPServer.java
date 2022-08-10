@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.util.Date;
 
 public class SimpleHTTPServer {
 
@@ -31,7 +32,14 @@ public class SimpleHTTPServer {
 //                https://javarevisited.blogspot.com/2015/06/how-to-create-http-server-in-java-serversocket-example.html
             }
 
-//
+
+
+//            to send response, get output stream from scoket and write http response code ok and send todays dats for ex
+            try (Socket socket = server.accept()) {
+                Date today = new Date();
+                String httpResponse = "HTTP/1.1 200 OK\r\n\r\n" + today;
+                socket.getOutputStream().write(httpResponse.getBytes("UTF-8"));
+            }
         }
     }
 }
