@@ -55,6 +55,8 @@ can improve bubble sort or insertion sort algos by using shell sort
  */
 public class ShellSort {
 
+
+
     public static void main(String[] args) {
 
         int[] intArray = { 20, 35, -15, 7, 55, 1, -22 };
@@ -66,15 +68,16 @@ public class ShellSort {
             for (int i = gap; i < intArray.length; i++) {
                 int newElement = intArray[i]; //intArray[i] is essentially intArray[gap]
 
-                int j = i; // j does the traversing
+                int j = i; // j does the traversing. need different index because don't want to be changing i as we traverse and search for the insertion point
 
                 //if j becomes less than gap, then we've hit the front of the array, so do j >= gap
                 while (j >= gap && intArray[j - gap] > newElement) {
-                    //then move the element at j - gap up # of positions equal to gap
+                    //then move the element at j - gap up the array by # of positions equal to gap
+                    intArray[j] = intArray[j - gap];
+                    // initially putting the element at position 3 to position 0 because 7 < 20.
 
-                    intArray[j] = intArray[j - gap]; // initially putting the element at position 3 to position 0 because 7 < 20.
-
-                    j -= gap; //decrement j by gap, causing a drop out of the while loop because found the insertion point
+                    j -= gap;
+                    //decrement j (the next element we look at) by gap, so as to look at the next element that is gap positions away
                 }
 
                 //assign newElement to the position where j is at
@@ -88,6 +91,26 @@ public class ShellSort {
 
         for (int i = 0; i < intArray.length; i++) {
             System.out.println(intArray[i]);
+
+        }
+
+
+
+
+        //review of insertion sort impl. basically the same thing as Shell Sort, but here initialize (gap) to 1
+        for (int firstUnsortedIndex = 1; firstUnsortedIndex < intArray.length;
+             firstUnsortedIndex++) {
+            int newElement = intArray[firstUnsortedIndex]; //assign newElement to the initiated (/unsorted) element
+
+            int i;
+            //only other difference really is the loop is taking care of assigning i, just decrementing it each time
+            for (i = firstUnsortedIndex; i > 0 && intArray[i-1] > newElement; i--) {
+                //looping through all the elements, shifting them to the right if possible
+                intArray[i] = intArray[i - 1];
+            }
+
+            //dropping out of the for loop means we've found the insertion point; can assign newElement to the position where [i] left off
+                intArray[i] = newElement;
 
         }
     }
