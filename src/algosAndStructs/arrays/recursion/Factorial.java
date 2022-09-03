@@ -1,4 +1,4 @@
-package algosAndStructs.arrays.factorial;
+package algosAndStructs.arrays.recursion;
 
 
 /*1. if num =0, the factorial is 1. stop recursion. we have the result
@@ -37,7 +37,7 @@ public class Factorial {
     // n! = (n-1)! * n
 
     public static int recurisveFactorial(int num) {
-        if (num == 0) {
+        if (num == 0) { // if didnt have this, would get a stack overflow error. called a base case or breaking condition. starts to unwind the stack
             return 1;
         }
 
@@ -45,8 +45,14 @@ public class Factorial {
         //first, recursiveFactorial(3) is called but will wait until recursiveFactorial(2) is executed and returns 2.
         //but recursiveFactorial(2) will wait until recursiveFactorial(1) is executed and returns 1.
         // but before that, recursiveFactorial(1) will wait until recursiveFactorial(0) is executed and returns 1. it finishes without being pushed onto the stack
-        //now each of the calls can proceed from the reverse order they were called in. 1 * 2 * 3 = 6
+        //now each of the calls can proceed from the reverse order they were called in. recursiveFactorial(1) -> recursiveFactorial(2), then 3 etc.
     }
+
+
+
+    //back to ITERATIVE factorial: The iterative implementation usually runs faster than the recursive implementation and uses less memory
+    //because the recursive implementation has to keep track of the call stack. however, the recursive will be fewer lines of code
+    //caveat: tail recursion. prevents stack overflow. not available in java.
 
 
 }
