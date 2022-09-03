@@ -21,4 +21,11 @@ public class MergeSort {
     start = 0 end = 7 (array.length)    midpoint = (start + end) / 2  =  3     elements 0 - 2 are in left array, 3 - 6 are in right array
 
      */
+
+    /*
+    * 1st split: looking at left array. start = 0  end = 3  (end indx always 1+lastIndx)   midpoint = 1
+    * 2nd split: looking at left array. start = 0  end = 1  midpoint = 0
+    * 3rd split: looking at right array of left. start = 1  end = 3  midpoint = (1+3)/2 = 2
+    * initial left array now only needs its right array (positions 1 and 2) split. Elements 1-1 will go left, 2-2 will go right
+    *  */
 }
